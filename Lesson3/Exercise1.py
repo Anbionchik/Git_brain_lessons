@@ -6,7 +6,7 @@ def division_function(int1, int2):
         return "Деление на ноль не допускается"
     return int1 / int2
 
-int1 = input("Введите первое число: ")
-int2 = input("Введите второе число: ")
+int1 = int(input("Введите первое число: "))
+int2 = int(input("Введите второе число: "))
 
 print(division_function(int1, int2))

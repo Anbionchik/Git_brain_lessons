@@ -5,7 +5,16 @@
 def my_func(x, y):
     return x**y
 
-x = input("Введите действительное положительное число x: ")
-y = input("Введите целое отрицательное число y: ")
+def my_func2(x, y):
+    temp_x = x
+    if y <= 0:
+        for _ in range(abs(y - 1)):
+            temp_x = temp_x / x
+    return temp_x
+
+
+x = int(input("Введите действительное положительное число x: "))
+y = int(input("Введите целое отрицательное число y: "))
 
 print(my_func(x, y))
+print(my_func2(x, y))

@@ -7,7 +7,8 @@
 
 
 def find_sum(some_string):
-    return sum(some_string.split())
+    return sum(map(int, some_string.split()))
+
 result_sum = 0
 
 while True:
@@ -19,5 +20,5 @@ while True:
         print(result_sum)
         break
     else:
-        result_sum += input_from_user
+        result_sum += find_sum(input_from_user)
         print(result_sum)
