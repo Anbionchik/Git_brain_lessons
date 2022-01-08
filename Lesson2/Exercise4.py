@@ -4,5 +4,8 @@
 
 input_list = input("Введите строку из нескольких слов разделённых пробелом: ").split(" ")
 
-for i in range(len(input_list)):
-    print("{}. {:.10}".format(i + 1, input_list[i]))
+# for i in range(len(input_list)):
+#     print("{}. {:.10}".format(i + 1, input_list[i]))
+
+for n, i in enumerate(input_list):
+    print("{}. {:.10}".format(n + 1, i))

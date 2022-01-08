@@ -12,7 +12,7 @@ print("Начинаем заполнение списка товаров.")
 
 while True:
     answer = input("Желаете внести позицию? да/нет ")
-    if answer == "y":
+    if answer == "да":
         name = input("Введите наименование позиции: ")
         price = input("Введите цену: ")
         quantity = input("Введите количество: ")
@@ -24,7 +24,7 @@ while True:
             fields_list[3]: units
         }))
         print("Товар {} стоимостью {} за {} {} добавлен".format(name, price, quantity, units))
-    elif answer == "n":
+    elif answer == "нет":
         break
     else:
         continue
