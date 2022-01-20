@@ -18,4 +18,5 @@ def unique_numbers_generator(origin_list):
 
 
 result_list = [x for x in unique_numbers_generator(origin_list)]
+result_list = [x for x in origin_list if origin_list.count(x) == 1]
 print(result_list)

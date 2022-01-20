@@ -18,4 +18,5 @@ def second_list_generator(first_list):
 
 
 second_list = [x for x in second_list_generator(first_list)]
+second_list = [first_list[x] for x in range(1, len(first_list)) if first_list[x] > first_list[x - 1]]
 print(second_list)
