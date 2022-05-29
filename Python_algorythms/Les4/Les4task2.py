@@ -1,0 +1,4 @@
+
+
+def eratosfen(n):
+    pass
