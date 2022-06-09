@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7a40a689-50f3-49e0-b6ef-8d32ebd10d76" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Python_algorythms/Les6/les6_task1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="c1e97288-8678-44ea-a8b4-77cbe0e4816a" name="Changes" comment="Добавлено ДЗ по уроку 6 Алгоритмов python" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
