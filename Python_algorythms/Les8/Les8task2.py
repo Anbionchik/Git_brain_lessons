@@ -72,9 +72,15 @@ def dijkstra_pro(graph, start):
             while ancestor != -1:
                 track[i].insert(0, ancestor)
                 ancestor = parent[ancestor]
+            track[i].append(i)
     return cost, track
 
 
 n = int(input("Вершина: "))
-print(dijkstra_pro(g, n))
+cost, track = dijkstra_pro(g, n)
+
+for i in range(len(g)):
+    print(f'Стоимость пути {n} -> {i} равна {cost[i]}, маршрут: {" -> ".join(str(x) for x in track[i])}')
+
+
 
