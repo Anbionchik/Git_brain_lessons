@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c1e97288-8678-44ea-a8b4-77cbe0e4816a" name="Changes" comment="Сделана основная часть заданий урока 4" />
+    <list default="true" id="c1e97288-8678-44ea-a8b4-77cbe0e4816a" name="Changes" comment="Доделано ДЗ по уроку 6">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -59,7 +61,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="7a40a689-50f3-49e0-b6ef-8d32ebd10d76" name="Changes" comment="" />
+      <changelist id="c1e97288-8678-44ea-a8b4-77cbe0e4816a" name="Changes" comment="Сделана основная часть заданий урока 4" />
       <created>1654713379388</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -79,7 +81,21 @@
       <option name="project" value="LOCAL" />
       <updated>1654803337707</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Выполнена часть ДЗ по уроку 6">
+      <created>1656104038467</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1656104038467</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Доделано ДЗ по уроку 6">
+      <created>1656265189587</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1656265189587</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -96,6 +112,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Добавлен .gitignore" />
     <MESSAGE value="Сделана основная часть заданий урока 4" />
-    <option name="LAST_COMMIT_MESSAGE" value="Сделана основная часть заданий урока 4" />
+    <MESSAGE value="Выполнена часть ДЗ по уроку 6" />
+    <MESSAGE value="Доделано ДЗ по уроку 6" />
+    <option name="LAST_COMMIT_MESSAGE" value="Доделано ДЗ по уроку 6" />
   </component>
 </project>
