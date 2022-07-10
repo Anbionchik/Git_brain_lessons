@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c1e97288-8678-44ea-a8b4-77cbe0e4816a" name="Changes" comment="Начато выполнение курсовой работы">
+    <list default="true" id="c1e97288-8678-44ea-a8b4-77cbe0e4816a" name="Changes" comment="Завершена предобработка массива данных">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python_libs/Course Work/Course_Work_Khlopkov.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Python_libs/Course Work/Course_Work_Khlopkov.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python_libs/Course Work/init_prep_data" beforeDir="false" afterPath="$PROJECT_DIR$/Python_libs/Course Work/init_prep_data" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,7 +118,21 @@
       <option name="project" value="LOCAL" />
       <updated>1656956323875</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Обработка площади гостинных">
+      <created>1657165638215</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1657165638215</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Завершена предобработка массива данных">
+      <created>1657312229817</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1657312229817</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -138,6 +154,8 @@
     <MESSAGE value="Сделано два задания урока 8" />
     <MESSAGE value="Доделано задание урока 8" />
     <MESSAGE value="Начато выполнение курсовой работы" />
-    <option name="LAST_COMMIT_MESSAGE" value="Начато выполнение курсовой работы" />
+    <MESSAGE value="Обработка площади гостинных" />
+    <MESSAGE value="Завершена предобработка массива данных" />
+    <option name="LAST_COMMIT_MESSAGE" value="Завершена предобработка массива данных" />
   </component>
 </project>
