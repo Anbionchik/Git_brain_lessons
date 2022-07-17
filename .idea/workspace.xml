@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c1e97288-8678-44ea-a8b4-77cbe0e4816a" name="Changes" comment="Доделано ДЗ по уроку 6">
+    <list default="true" id="c1e97288-8678-44ea-a8b4-77cbe0e4816a" name="Changes" comment="Добавлены результаты предсказания">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python_libs/Course Work/Course_Work_Khlopkov.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Python_libs/Course Work/Course_Work_Khlopkov.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,7 +13,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="Les_8_branch" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -95,7 +96,70 @@
       <option name="project" value="LOCAL" />
       <updated>1656265189587</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Сделано два задания урока 8">
+      <created>1656612463704</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1656612463704</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Доделано задание урока 8">
+      <created>1656790296015</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1656790296015</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Начато выполнение курсовой работы">
+      <created>1656956323875</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1656956323875</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Обработка площади гостинных">
+      <created>1657165638215</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1657165638215</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Завершена предобработка массива данных">
+      <created>1657312229817</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1657312229817</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Добавлена линейная регрессия и Градиентный бустинг">
+      <created>1657463621688</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1657463621688</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Добавлен механизм отброса значений по квантилям, улучшения он не дал)">
+      <created>1657647420882</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1657647420882</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Добавлены результаты предсказания">
+      <created>1657647604659</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1657647604659</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Добавлены результаты предсказания">
+      <created>1657647609000</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1657647609000</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -114,6 +178,14 @@
     <MESSAGE value="Сделана основная часть заданий урока 4" />
     <MESSAGE value="Выполнена часть ДЗ по уроку 6" />
     <MESSAGE value="Доделано ДЗ по уроку 6" />
-    <option name="LAST_COMMIT_MESSAGE" value="Доделано ДЗ по уроку 6" />
+    <MESSAGE value="Сделано два задания урока 8" />
+    <MESSAGE value="Доделано задание урока 8" />
+    <MESSAGE value="Начато выполнение курсовой работы" />
+    <MESSAGE value="Обработка площади гостинных" />
+    <MESSAGE value="Завершена предобработка массива данных" />
+    <MESSAGE value="Добавлена линейная регрессия и Градиентный бустинг" />
+    <MESSAGE value="Добавлен механизм отброса значений по квантилям, улучшения он не дал)" />
+    <MESSAGE value="Добавлены результаты предсказания" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавлены результаты предсказания" />
   </component>
 </project>
