@@ -1,2 +1,9 @@
 .*
 .idea\workspace.xml
+/Python_libs/Course Work/catboost_info/learn_error.tsv
+/Python_libs/Course Work/catboost_info/test_error.tsv
+/Python_libs/Course Work/catboost_info/time_left.tsv
+/Python_libs/Course Work/catboost_info/learn/events.out.tfevents
+/Python_libs/Course Work/catboost_info/test/events.out.tfevents
+/Parsing/Les1/token
+/Parsing/Les1/vk_data
