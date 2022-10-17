@@ -12,7 +12,7 @@ def simple_hash(sbtr):
 
 def get_substr(string):
     len_str = len(string)
-    assert len_str > 1, "В строке должно быть более 1 символа"
+    assert len_str > 1, "В строке должно быть более 1 символа."
     res_dict = {}
 
     for i in range(1, len_str):
