@@ -1,0 +1,60 @@
+-- УРОК №5
+
+DROP TABLE IF EXISTS fashion_data;
+
+CREATE EXTERNAL TABLE fashion_data(
+	uuid BIGINT,
+	url	STRING,
+	title	STRING,
+	brand	STRING,
+	images	STRING,
+	date_stored	DATE,
+	selling_price	BIGINT,
+	star_rating INT,
+	size	STRING,
+	colour	STRING,
+	mrp	INT,
+	product_details STRING,	
+	setproductprice	STRING,
+	meta_data	STRING,
+	category	STRING,
+	product_code BIGINT,
+	competitor STRING
+)
+ROW format delimited fields terminated BY ','
+stored AS TEXTFILE
+location "/user/root/fashion"
+tblproperties ("skip.header.line.count"="1")
+;
+
+SELECT COUNT(*) FROM fashion_data;
+
+CREATE TABLE fashion_data_pure(
+	uuid BIGINT,
+	url	STRING,
+	title	STRING,
+	brand	STRING,
+	images	STRING,
+	date_stored	DATE,
+	selling_price	BIGINT,
+	star_rating INT,
+	size	STRING,
+	colour	STRING,
+	mrp	INT,
+	product_details STRING,	
+	setproductprice	STRING,
+	meta_data	STRING,
+	category	STRING,
+	product_code BIGINT,
+	competitor STRING
+)
+stored AS orc
+location "/user/root/fashion_orc"
+;
+
+INSERT INTO TABLE fashion_data_pure
+SELECT * FROM fashion_data WHERE star_rating <=5;
+
+SELECT count(*) FROM fashion_data_pure fdp;
+
+SELECT AVG(star_rating) FROM fashion_data_pure fdp WHERE star_rating > 0;

@@ -1,0 +1,16 @@
+PS C:\Users\Андрей\PycharmProjects\Git_brain_lessons\Hadoop\docker-hive-master> docker-compose exec hive-server bash
+root@ad2e9d2e9f30:/opt# whoami
+root
+root@ad2e9d2e9f30:/opt# exit
+exit
+PS C:\Users\Андрей\PycharmProjects\Git_brain_lessons\Hadoop\docker-hive-master> docker cp "d:\загрузки\airports.csv" docker-hive-master-hive-server-1:./root
+PS C:\Users\Андрей\PycharmProjects\Git_brain_lessons\Hadoop\docker-hive-master> docker-compose exec hive-server bash
+root@ad2e9d2e9f30:/opt# ls
+hadoop-2.7.4  hive
+root@ad2e9d2e9f30:/opt# ls /
+bin   dev            etc          home  lib64  mnt  proc  run   srv  tmp  var
+boot  entrypoint.sh  hadoop-data  lib   media  opt  root  sbin  sys  usr
+root@ad2e9d2e9f30:/opt# hdfs dfs -ls /
+Found 2 items
+drwxrwxr-x   - root supergroup          0 2022-12-06 17:42 /tmp
+drwxr-xr-x   - root supergroup          0 2022-12-07 17:58 /user

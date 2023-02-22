@@ -1,0 +1,62 @@
+PS C:\Users\Андрей\PycharmProjects\Git_brain_lessons\Hadoop\docker-hive-master> docker-compose exec hive-server bash
+root@ad2e9d2e9f30:/opt# ls
+hadoop-2.7.4  hive
+root@ad2e9d2e9f30:/opt# ls .
+hadoop-2.7.4  hive
+root@ad2e9d2e9f30:/opt# cd
+root@ad2e9d2e9f30:~# ls
+airports.csv
+root@ad2e9d2e9f30:~# ls -lh
+total 11M
+-rwxr-xr-x 1 root root 11M Dec  6 17:36 airports.csv
+root@ad2e9d2e9f30:~# hdfs dfs -put airports.csv
+root@ad2e9d2e9f30:~# hdfs dfs -ls /
+Found 2 items
+drwxrwxr-x   - root supergroup          0 2022-12-06 17:42 /tmp
+drwxr-xr-x   - root supergroup          0 2022-12-07 17:58 /user
+root@ad2e9d2e9f30:~# hdfs dfs -ls
+Found 2 items
+drwxr-xr-x   - root supergroup          0 2022-12-07 17:58 airports
+-rw-r--r--   3 root supergroup   10658045 2022-12-08 17:49 airports.csv
+root@ad2e9d2e9f30:~ls
+airports.csv
+root@ad2e9d2e9f30:~# hdfs dfs -ls
+Found 2 items
+drwxr-xr-x   - root supergroup          0 2022-12-07 17:58 airports
+-rw-r--r--   3 root supergroup   10658045 2022-12-08 17:49 airports.csv
+root@ad2e9d2e9f30:~# hdfs dfs -ls /
+Found 2 items
+drwxrwxr-x   - root supergroup          0 2022-12-06 17:42 /tmp
+drwxr-xr-x   - root supergroup          0 2022-12-07 17:58 /user
+root@ad2e9d2e9f30:~# hdfs dfs -ls /user
+Found 2 items
+drwxr-xr-x   - root supergroup          0 2022-12-06 17:42 /user/hive
+drwxr-xr-x   - root supergroup          0 2022-12-08 17:49 /user/root
+root@ad2e9d2e9f30:~# hdfs dfs -ls /user/root
+Found 2 items
+drwxr-xr-x   - root supergroup          0 2022-12-07 17:58 /user/root/airports
+-rw-r--r--   3 root supergroup   10658045 2022-12-08 17:49 /user/root/airports.csv
+root@ad2e9d2e9f30:~# hdfs dfs -ls /user/root/airports
+root@ad2e9d2e9f30:~# hdfs dfs -mkdir new_folder
+root@ad2e9d2e9f30:~# hdfs dfs -ls
+Found 3 items
+drwxr-xr-x   - root supergroup          0 2022-12-07 17:58 airports
+-rw-r--r--   3 root supergroup   10658045 2022-12-08 17:49 airports.csv
+drwxr-xr-x   - root supergroup          0 2022-12-08 19:16 new_folder
+root@ad2e9d2e9f30:~# hdfs dfs -cp airports.csv new_folder/airports.csv
+root@ad2e9d2e9f30:~# hdfs dfs -ls
+Found 3 items
+drwxr-xr-x   - root supergroup          0 2022-12-07 17:58 airports
+-rw-r--r--   3 root supergroup   10658045 2022-12-08 17:49 airports.csv
+drwxr-xr-x   - root supergroup          0 2022-12-08 19:17 new_folder
+root@ad2e9d2e9f30:~# hdfs dfs -ls new_folder
+Found 1 items
+-rw-r--r--   3 root supergroup   10658045 2022-12-08 19:17 new_folder/airports.csv
+root@ad2e9d2e9f30:~# hdfs dfs -du
+0         airports
+10658045  airports.csv
+10658045  new_folder
+root@ad2e9d2e9f30:~# hdfs dfs -du -h
+0       airports
+10.2 M  airports.csv
+10.2 M  new_folder
