@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+package example;
+
+message RedditRecord {
+    required string title    = 1;
+    required int64 score     = 2;
+    required string id       = 3;
+    optional string url      = 4;
+    optional int64 comms_num = 5;
+    optional float created   = 6;
+    optional string body     = 7;
+    optional string ts       = 8;
+}
+
+message ReditData {
+    repeated RedditRecord record = 1;
+}
