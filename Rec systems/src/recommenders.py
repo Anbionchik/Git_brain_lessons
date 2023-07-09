@@ -8,6 +8,7 @@ from scipy.sparse import csr_matrix
 from implicit.als import AlternatingLeastSquares
 from implicit.nearest_neighbours import ItemItemRecommender  # нужен для одного трюка
 from implicit.nearest_neighbours import bm25_weight, tfidf_weight
+from src.metrics import recall_at_k, precision_at_k
 
 
 class MainRecommender:
@@ -98,10 +99,37 @@ class MainRecommender:
         if model_attrs is not None:
             for k, v in model_attrs.items():
                 setattr(model, k, v)
-        
-        model.fit(user_item_matrix)
+
+        model.fit(user_item_matrix, show_progress=False)
 
         return model
+
+    def get_recall_at_k(self, val_data, k=5):
+      result = val_data.groupby('user_id')['item_id'].unique().reset_index()
+      result.columns=['user_id', 'actual']
+      result = result[result['user_id'].isin(self.userid_to_id.keys())]
+      result['pred'] = result.apply(lambda x: self.get_als_recommendations(x['user_id'], N=k), axis=1)
+      recall_value = result.apply(lambda x: recall_at_k(x['pred'], x['actual'], k=k), axis=1).mean()
+
+      return recall_value
+
+    def get_own_recall_at_k(self, val_data, k=5):
+      result = val_data.groupby('user_id')['item_id'].unique().reset_index()
+      result.columns=['user_id', 'actual']
+      result = result[result['user_id'].isin(self.userid_to_id.keys())]
+      result['pred'] = result.apply(lambda x: self.get_own_recommendations(x['user_id'], N=k), axis=1)
+      recall_value = result.apply(lambda x: recall_at_k(x['pred'], x['actual'], k=k), axis=1).mean()
+
+      return recall_value
+
+    def get_precision_at_k(self, val_data, k=5):
+      result = val_data.groupby('user_id')['item_id'].unique().reset_index()
+      result.columns=['user_id', 'actual']
+      result = result[result['user_id'].isin(self.userid_to_id.keys())]
+      result['pred'] = result.apply(lambda x: self.get_als_recommendations(x['user_id'], N=k), axis=1)
+      recall_value = result.apply(lambda x: precision_at_k(x['pred'], x['actual'], k=k), axis=1).mean()
+
+      return recall_value
 
     def _update_dict(self, user_id):
         """Если появился новыю user / item, то нужно обновить словари"""
@@ -133,7 +161,7 @@ class MainRecommender:
         """Рекомендации через стардартные библиотеки implicit"""
 
         self._update_dict(user_id=user)
-        filter_items = [] if self.fake_id is not None else [self.itemid_to_id[self.fake_id]]
+        filter_items = [] if self.fake_id is None else [self.itemid_to_id[self.fake_id]]
         res = model.recommend(userid=self.userid_to_id[user],
                                         user_items=self.user_item_matrix_for_pred[self.userid_to_id[user]],
                                         N=N,
